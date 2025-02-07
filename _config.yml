@@ -19,7 +19,6 @@
 # in the templates via {{ site.myvariable }}.
 
 title: Lots of Fluff
-email: 23279594+fluffinity@users.noreply.github.com
 description: >- # this means to ignore newlines until "baseurl:"
   The place of all the stuff I wanna talk about (definitely not ranting...)
 baseurl: "" # the subpath of your site, e.g. /blog
