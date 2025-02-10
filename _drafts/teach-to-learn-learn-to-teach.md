@@ -7,26 +7,27 @@ categories: posts
 We all learn every day even if we are not noticing it. Programming is no exception. But there is a difference in how fast and how much we learn.
 You can become a good programmer by studying yourself and coding a lot.
 But I believe that you can not become a great one unless you are also able to bring someone else to your level.
-Only if you can teach another person your learned skillsets, you have really mastered them. 
+Only if you can teach another person your learned skill sets, you have really mastered them. 
 In the process you will need to think about the topic in a lot of ways and that will give you a more complete view of it. 
-In turn this means you will also learn a lot about what you try to teach. And some of this new kowledge may surprise you even after years of experience.
+In turn this means you will also learn a lot about what you try to teach. And some of this new knowledge may surprise you even after years of experience.
 
 So lets dive into the art that is teaching!
 
-## Ok, but why should I listen to you?
+## My own background
 
 As with anything anyone tries to tell you, you may listen to it and then decide whether you want to believe it. 
 But to give you some reason to believe me, I have been programming for 10 years now, from late high school throughout my B.Sc in CS and now at work.
 For 6 of these years I have been a tutor in various classes at university. 
-From introduction into programming, software development and programming languages to datastructures and efficient algorithms,
+From introduction into programming, software development and programming languages to data structures and efficient algorithms,
 formal languages and computability as well as GPU programming. And in these 6 years I taught more than 200 students, 
 graded their assignments and exams, observed their accomplishments and struggles and got confronted with many different questions.
-They would range from expectd problems, like how properly synchronize threads, to stuff we would dismiss as "trivial". More to that below.
+They would range from expected problems, like how properly synchronize threads, to stuff we would dismiss as "trivial". More to that below.
 
-And if you think that it should have been fairly easy to teach these students, because they are at an university, think again. 
+And if you think that it should have been fairly easy to teach these students, because they are at an university, I'm sorry to disappoint you. 
 It didn't matter whether a student was in their first semester or if they were short of finishing their master. 
 The former could easily be much better than the latter. The correlation between years of study and actual knowledge was a weak one at best.
-Even when I taught in advanced courses I would almost alwazs have students, who barely understood the basics of not just the course, but CS in general.
+Even when I taught in advanced courses I would almost always have students, who barely understood the basics of not just the course, 
+but CS in general.
 Needless to say, it was hard. But it became easier over time, due to me getting more experienced in both, 
 the material itself as well as how to teach it to others. Over time I learned to teach.
 
@@ -34,7 +35,7 @@ So while I don't have a long list of open-source projects I point to for my resu
 Lets go over one question of one student I had in my first semester as tutor and how I did answer it vs how I would answer it now.
 The question at hand: "What is even the difference between `return` and `print`?
 
-## Wait, what? This can't be a real question!
+## On seemingly trivial questions
 
 Yes, this is a question I had to answer once. It was in one of the beginner courses and the students had just learned about functions. 
 So far they used Python and only used it inside Jupyter Notebooks. If you don't know about them, good.
@@ -62,11 +63,11 @@ While we can argue that the way Python was introduced in the course is not good,
 nothing changes the fact, that for this student `return` and `print` seemed to do the same. 
 And so the question for us should be "How can I answer this question?"
 
-## Ok then, how can I answer this question?
+## Explaining the seemingly obvious
 
 I think we all can relate to the fact that explaining something more complex can be easier than explaining a triviality.
 We all can explain why `x^2 + 1` is greater than 0 for all real `x`, but can you also show why `1 + 1 = 2`?
-Unless you are a mathmatician you will likely do the same I did.
+Unless you are a mathematician you will likely do the same I did.
 
 Back then I stuck with the code above and just told the student that with `print` you explicitly output whatever you want to print. 
 `return` on the other hand is used in functions so that the caller of that function gets back a value it can then 
@@ -100,21 +101,44 @@ print("Some output")
 area = calculate_area(10)
 ```
 
-When we execute this codeblock we now only get "Some output" in our output. `area` is nowhere to be seen and neither is its value.
+When we execute this code block we now only get "Some output" in our output. `area` is nowhere to be seen and neither is its value.
 Now it gets much easier to explain the difference because you can **see** the difference. 
 While the stuff in `print` lands in our output, `area` now contains the value `calculate_area` returns with `radius` being 10.
 Just adding the line `area` to the code above afterwards and re-executing the cell will then show 314.1592653589793 in the output.
 This proves that `area` really contained the value `calculate_area` computes, showing the effect of `return`.
 
-So, by just chaning one line of code here we were able to massively improve the quality of the explanation. 
+So, by just changing one line of code here we were able to massively improve the quality of the explanation. 
 And this brings me to the point of this section:
 
 In order to explain something efficiently you really need to understand not only the topic itself, but also the circumstances of the person asking.
 You need to be creative enough to find new ways or changes to existing ones, in order to make it easier for you to get your answer across.
 And if someone asks you something seemingly trivial, take the time to explain it anyways. 
-You may find it more difficult to break down, than you initially thought. Nothing is truly trivial for eceryone.
+You may find it more difficult to break down, than you initially thought. Nothing is truly trivial for everyone.
 But sometimes all they need is a slightly different perspective.
+And by trying to find that different perspective your students can actually teach you!
 
-## Can you be more concrete about the last part?
+## How to learn from your students
 
+Well, lets go back to the example above. Explaining the difference between `print` and `return` became a lot simpler, the moment the last
+line got changed. That change took the fact into account that we are within the environment of a Jupyter notebook. 
+This means, on the way to this change, we had to learn the behavior of these notebook as well. If we didn't know that before we would
+know it now. And that's how your students can teach you a lot. By trying to answer their question you may stumble upon knowledge about the topic
+you just didn't have before.
 
+Of course, this doesn't happen every time but it's something you should keep an open mind about. In general, be flexible with your approaches
+and adapt to not only the topic at hand but also your students. I think, we all had those teachers back in school, who would just
+do their thing and if you didn't understand something they said, sucks to be you. Please, don't be like that.
+"My way or the highway" has its place (hi Linus), but teaching is not that place.
+
+Maybe you feel like I'm hammering a lot on this point and that's because it is just that important to me. 
+Being adaptable may be the most important skill you can develop as a teacher (I already assume a baseline competence in the topic to teach.)
+Presenting the topic in interesting and fun ways certainly is also important, but I see it as another form of adaptability, given that
+"interesting" and "fun" are subjective things. 
+
+The same applies to this post. Maybe you find the style of it interesting enough to follow along.
+But maybe it would be much better for you, if this post was done differently. Maybe you prefer reading a comic about that, 
+maybe a video is a better fit etc. This is an unfortunate fact about teaching content you create in advance. Unlike in a classroom, discord call
+or just hanging out, these forms of teaching can not adapt after the fact. You can only try to make it as good as you can in the format you've chosen.
+Sure, for some topics, a certain format can automatically be better than another. If you want to explain stuff about videos, a video itself may be
+the best way to do it. But in the end well executed content with a worse format can still easily outperform poorly made content with a better format.
+So, for the time being I'll stick to blog posts and just try to get better at them.
