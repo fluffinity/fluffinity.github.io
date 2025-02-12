@@ -142,3 +142,9 @@ or just hanging out, these forms of teaching can not adapt after the fact. You c
 Sure, for some topics, a certain format can automatically be better than another. If you want to explain stuff about videos, a video itself may be
 the best way to do it. But in the end well executed content with a worse format can still easily outperform poorly made content with a better format.
 So, for the time being I'll stick to blog posts and just try to get better at them.
+
+And as a last advice:
+
+Tell your students to not use AI in the beginning. They need to build up the skills to come to the desired solutions on their own. 
+Otherwise they won't be able to validate any output an AI gives them. 
+This topic deserves its own blog post but this is my overall position on AI in teaching.
